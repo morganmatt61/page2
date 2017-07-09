@@ -1,0 +1,26 @@
+body{
+	background-color:#F3ECE7
+}	
+#Navigation{
+	//max-width:450px;
+	padding: 10px 200px 10px 200px;
+}
+
+#header{
+	font-family: typeface, arial;
+	padding: 10px 0px;
+	background-color:#E4DAC2;
+	text-align:center;
+}
+.contentBody{
+	margin: 20px 120px 120px 120px;
+}
+.aboutSect{
+	margin-bottom:20px;
+}
+#footer{
+	text-align:right;
+}
+footer a{
+	margin-right:15px;
+}

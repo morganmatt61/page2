@@ -1,13 +1,13 @@
 <div>
 	<div id="skillsBar">
 		<ul class="nav nav-pills nav-stacked">
-		  <li class="active"><a onclick="showSkill('backEndSkills');">Back end engineering</a></li>
-		  <li><a onclick="showSkill('frontEndSkills');" >Front-end languages</a></li>
-		  <li><a onclick="showSkill('rdbmsSkills');">Relational Database Management Systems</a></li>
-		  <li><a onclick="showSkill('cloudSkills');">Cloud Technology</a></li>
-		  <li><a onclick="showSkill('frameworkSkills');">Frameworks</a></li>
-		  <li><a onclick="showSkill('linuxSkills');">Linux</a></li>
-		  <li><a onclick="showSkill('additionalSkills');">Linux</a></li>
+		  <li class="active"><a onclick="showSkill('backEnd');">Back end engineering</a></li>
+		  <li><a id="frontEndPill" onclick="showSkill('frontEnd');">Front-end languages</a></li>
+		  <li><a id="rdbmsPill" onclick="showSkill('rdbms');">Relational Database Management Systems</a></li>
+		  <li><a id="cloudPill" onclick="showSkill('cloud');">Cloud Technology</a></li>
+		  <li><a id="frameworkPill" onclick="showSkill('framework');">Frameworks</a></li>
+		  <li><a id="linuxPill" onclick="showSkill('linux');">Linux</a></li>
+		  <li><a id="bonusPill" onclick="showSkill('bonus');">Bonus Skills</a></li>
 		</ul>
 	</div>
 	<div>
@@ -63,7 +63,7 @@
 		  <div id="linuxSkills" class="skillDisplay">
 			 <p>Basic Linux functions such as managing permissions, directory usage, file editing in vi, user management, program installation and configuration and more.</p>
 		  </div>
-		  <div id="additionalSkills" class="skillDisplay">
+		  <div id="bonusSkills" class="skillDisplay">
 			<dl>
 			  <dt>Apache Tomcat</dt>
 			  <dd>Running and maintaining servers, building </dd>

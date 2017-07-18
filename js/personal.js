@@ -15,4 +15,6 @@ function showBody(body){
 function showSkill(skill){
 	$('.skillDisplay').css('display', 'none');
 	$('#' + skill + 'Skills').css('display', 'block');
+	$('.skillsBar li').removeClass('active');
+	$('#' + skill + 'Pill').addClass('active');
 }

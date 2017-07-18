@@ -1,138 +1,79 @@
-<div class="panel-group" id="accordion">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#backEndSkill">
-        Back end engineering</a>
-      </h4>
-    </div>
-    <div id="backEndSkill" class="panel-collapse collapse in">
-      <div class="panel-body">
-		<dl>
-		  <dt>Java</dt>
-		  <dd>developing database driven web applications and back end processing using Java. Developing "Game of Life" for android devices.</dd>
-		  <dt>PHP</dt>
-		  <dd>developing database driven web applications and back end processing using PHP. </dd>
-		</dl> 
-	  </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#frontEndSkill">
-        Front-end languages</a>
-      </h4>
-    </div>
-    <div id="frontEndSkill" class="panel-collapse collapse">
-      <div class="panel-body">
-		<dl>
-			<dt>HTML</dt>
-			<dd>creating content for webpages</dd>
-			<dt>CSS</dt>
-			<dd>structuring and styling content for webpages</dd>
-			<dt>JavaScript and JQuery</dt>
-			<dd>scripting front and webpages and handling interaction with back end modules</dd>
-			<dt>Bootstrap</dt>
-			<dd>Structuring and Styling responsive webpages which display properly according to different devices</dd>
-		</dl>
-	  </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#databaseSkill">
-        Relational Database Management Systems (RDMBS)</a>
-      </h4>
-    </div>
-    <div id="databaseSkill" class="panel-collapse collapse">
-      <div class="panel-body">
-		<dl>
-			<dt>MySQL, Informix(IBM)</dt>
-			<dd>Designing, implementing and utilizing relational database tables </dd>
-		</dl>
-	  </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#cloudSkill">
-        Cloud Technology</a>
-      </h4>
-    </div>
-    <div id="cloudSkill" class="panel-collapse collapse">
-      <div class="panel-body">
-	  Amazon Web Services
-		<dl>
-			<dt>EC2</dt>
-			<dd>Creation of cloud servers used for web, directories, email, email clients and more</dd>
-			<dt>S3</dt>
-			<dd>create and manage sms services to be able to message clients of process events</dd>
-			<dt>SES</dt>
-			<dd>creating services to send Marketing Emails to clients</dd>
-			<dd>Storage of documents, images and other files to be accessed through web, email and other services</dd>
-			<dt>SNS</dt>
-		</dl>
-	  </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-	  <h4 class="panel-title">
-	    <a data-toggle="collapse" data-parent="#accordion" href="#frameworkSkill">
-		  Frameworks</a>
-	  </h4>
-    </div>
-    <div id="frameworkSkill" class="panel-collapse collapse">
-      <div class="panel-body">
-		 <dl>
-			<dt>Hibernate</dt>
-			<dd>Database Mapping</dd>
-			<dt>Spring</dt>
-			<dd>Security, Dependency Injection, Environment Properties</dd>
-			<dt>WebWork</dt>
-			<dd>URL Mapping</dd>
-		 </dl>
-	  </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#linuxSkill">
-        Linux</a>
-      </h4>
-    </div>
-    <div id="linuxSkill" class="panel-collapse collapse">
-      <div class="panel-body">
-		 <p>Basic Linux functions such as managing permissions, directory usage, file editing in vi, user management, program installation and configuration and more.</p>
-	  </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#otherSkill">
-          Additional Skills</a>
-      </h4>
-    </div>
-    <div id="otherSkill" class="panel-collapse collapse">
-      <div class="panel-body">
-		<dl>
-		  <dt>Apache Tomcat</dt>
-		  <dd>Running and maintaining servers, building </dd>
-		  <dt>tortioseSVN</dt>
-		  <dd>Version Control</dd>
-		  <dt>Atlassian</dt>
-		  <dd>project tracking, team communication, documentation</dd>
-		</dl>
-	  </div>
-    </div>
-  </div>
-</div> 
-
- 
- 
- 
+<div>
+	<div id="skillsBar">
+		<ul class="nav nav-pills nav-stacked">
+		  <li class="active"><a onclick="showSkill('backEndSkills');">Back end engineering</a></li>
+		  <li><a onclick="showSkill('frontEndSkills');" >Front-end languages</a></li>
+		  <li><a onclick="showSkill('rdbmsSkills');">Relational Database Management Systems</a></li>
+		  <li><a onclick="showSkill('cloudSkills');">Cloud Technology</a></li>
+		  <li><a onclick="showSkill('frameworkSkills');">Frameworks</a></li>
+		  <li><a onclick="showSkill('linuxSkills');">Linux</a></li>
+		  <li><a onclick="showSkill('additionalSkills');">Linux</a></li>
+		</ul>
+	</div>
+	<div>
+		<div id="backEndSkills" class="skillDisplay" style="display:block;">
+			<dl>
+			  <dt>Java</dt>
+			  <dd>developing database driven web applications and back end processing using Java. Developing "Game of Life" for android devices.</dd>
+			  <dt>PHP</dt>
+			  <dd>developing database driven web applications and back end processing using PHP. </dd>
+			</dl> 
+		</div>
+		  <div id="frontEndSkills" class="skillDisplay">
+			<dl>
+				<dt>HTML</dt>
+				<dd>creating content for webpages</dd>
+				<dt>CSS</dt>
+				<dd>structuring and styling content for webpages</dd>
+				<dt>JavaScript and JQuery</dt>
+				<dd>scripting front and webpages and handling interaction with back end modules</dd>
+				<dt>Bootstrap</dt>
+				<dd>Structuring and Styling responsive webpages which display properly according to different devices</dd>
+			</dl>
+		  </div>
+		  <div id="rdbmsSkills" class="skillDisplay">
+			<dl>
+				<dt>MySQL, Informix(IBM)</dt>
+				<dd>Designing, implementing and utilizing relational database tables </dd>
+			</dl>
+		  </div>
+		  <div id="cloudSkills" class="skillDisplay">
+		  Amazon Web Services
+			<dl>
+				<dt>EC2</dt>
+				<dd>Creation of cloud servers used for web, directories, email, email clients and more</dd>
+				<dt>S3</dt>
+				<dd>create and manage sms services to be able to message clients of process events</dd>
+				<dt>SES</dt>
+				<dd>creating services to send Marketing Emails to clients</dd>
+				<dd>Storage of documents, images and other files to be accessed through web, email and other services</dd>
+				<dt>SNS</dt>
+			</dl>
+		  </div>
+		 <div id="frameworkSkills" class="skillDisplay">
+			 <dl>
+				<dt>Hibernate</dt>
+				<dd>Database Mapping</dd>
+				<dt>Spring</dt>
+				<dd>Security, Dependency Injection, Environment Properties</dd>
+				<dt>WebWork</dt>
+				<dd>URL Mapping</dd>
+			 </dl>
+		  </div>
+		  <div id="linuxSkills" class="skillDisplay">
+			 <p>Basic Linux functions such as managing permissions, directory usage, file editing in vi, user management, program installation and configuration and more.</p>
+		  </div>
+		  <div id="additionalSkills" class="skillDisplay">
+			<dl>
+			  <dt>Apache Tomcat</dt>
+			  <dd>Running and maintaining servers, building </dd>
+			  <dt>tortioseSVN</dt>
+			  <dd>Version Control</dd>
+			  <dt>Atlassian</dt>
+			  <dd>project tracking, team communication, documentation</dd>
+			</dl>
+		</div>
+	</div>
+</div>
+<div style="clear:left;"></div>
+	 

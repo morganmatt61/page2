@@ -11,3 +11,8 @@ function showBody(body){
 	$('.contentBody').css('display', 'none');
 	$('#' + body).css('display', 'block');
 }
+
+function showSkill(skill){
+	$('.skillDisplay').css('display', 'none');
+	$('#' + skill + 'Skills').css('display', 'block');
+}

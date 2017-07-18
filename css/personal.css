@@ -24,3 +24,11 @@ body{
 footer a{
 	margin-right:15px;
 }
+.skillDisplay{
+	display:none;
+}
+#skillsBar{
+	float:left;
+	max-width:150px;
+	margin-right:20px;
+}
